@@ -4,6 +4,8 @@ import ResponsiveGrid from './components/ResponsiveGrid'
 import NestedGrid from './components/NestedGrid'
 import ProductCardGrid from './components/productCardGrid'
 import Dashboard from './page/dashboard'
+import UploadButton from './components/Button';
+import UploadForm from './components/Form';
 
 function App() {
   const [showCode, setShowCode] = useState(false);
@@ -15,12 +17,12 @@ function App() {
   };
 
   return (
-    <div className="w-full h-full p-4 space-y-8">
+    <div className="w-full h-full  space-y-8 ">
       <div>
-        <h2 className="text-2xl font-bold mb-4">Simple Grid</h2>
-        <SimpleGrid />
+        {/* <h2 className="text-2xl font-bold mb-4">Simple Grid</h2> */}
+        <UploadForm />
       </div>
-      <div>
+      {/* <div>
         <h2 className="text-2xl font-bold mb-4">Responsive Grid</h2>
         <ResponsiveGrid />
       </div>
@@ -40,7 +42,7 @@ function App() {
         <div className="mt-4 p-4 bg-gray-800 text-white rounded">
           <pre>{codeSnippet}</pre>
         </div>
-      )}
+      )} */}
     </div>
   )
 }
